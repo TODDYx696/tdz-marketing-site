@@ -1,0 +1,102 @@
+/* Mobile refinement for TDZ Marketing */
+@media (max-width: 900px){
+  html{scroll-padding-top:78px}
+  .container{width:min(100% - 28px,var(--max))}
+  header{background:rgba(7,8,11,.94)}
+  .nav-wrap{height:68px}
+  .brand{gap:7px}
+  .brand-mark{min-width:46px;height:32px;border-radius:9px;font-size:14px}
+  .brand-name{font-size:9px;letter-spacing:1.5px}
+  .menu-btn{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);font-size:21px;line-height:1}
+  nav{top:74px;left:14px;right:14px;padding:12px;gap:4px;border-radius:18px;background:rgba(17,19,25,.98)}
+  nav a{width:100%;padding:12px 13px;border-radius:10px;font-size:14px}
+  nav a:hover{background:rgba(255,255,255,.05)}
+  nav .whatsapp-nav{margin-top:5px;text-align:center}
+
+  .hero,section{padding:70px 0}
+  .hero{padding-top:118px;min-height:auto;padding-bottom:62px}
+  .hero-copy{max-width:100%}
+  .eyebrow{font-size:9px;letter-spacing:1.35px}
+  .hero h1{font-size:clamp(38px,11vw,50px);line-height:1.01;letter-spacing:-2.8px;margin:14px 0 20px}
+  .hero h1 span{font-size:.63em;letter-spacing:-1.5px;margin-top:7px}
+  .hero p{font-size:15px;line-height:1.55}
+  .actions{flex-direction:column;gap:10px;margin:25px 0}
+  .actions .btn{width:100%;min-height:48px}
+  .trust{gap:9px 14px;font-size:11px;line-height:1.35}
+  .hero-proof{transform:scale(.84);transform-origin:top center;margin-top:22px;margin-bottom:-8px}
+
+  .head h2{font-size:clamp(29px,8vw,40px);line-height:1.05;letter-spacing:-1.7px;margin-top:10px}
+  .head p{font-size:14px;line-height:1.55}
+  .grid{gap:12px}
+  .three,.benefits,.plans,.audience-grid,.extras-grid,.feedbacks{grid-template-columns:1fr}
+  article,.plan{padding:21px;border-radius:17px}
+  article>b{font-size:30px}
+  article h3{font-size:17px;margin-top:9px}
+  article p{font-size:13px;line-height:1.55}
+
+  .plans{gap:12px}
+  .plan{min-height:0;padding:22px}
+  .price{font-size:36px;margin:10px 0}
+  .plan .btn{width:100%;min-height:46px}
+
+  .extras-intro{gap:12px;margin-bottom:24px}
+  .extras-intro h2{font-size:clamp(31px,8.5vw,42px);letter-spacing:-1.8px}
+  .extras-intro>p{font-size:14px;line-height:1.55}
+  .extras-grid{gap:12px}
+  .extra-card{min-height:0;padding:21px}
+  .extra-content h3{font-size:25px;margin:16px 0 8px;letter-spacing:-.8px}
+  .extra-content p{font-size:13px;line-height:1.55}
+  .extra-content ul{margin-top:16px;gap:7px}
+  .extra-content li{font-size:12px}
+  .extra-bottom{align-items:stretch;flex-direction:column;gap:12px;padding-top:18px}
+  .extra-bottom strong{font-size:29px}
+  .extra-bottom .btn{width:100%;min-height:46px}
+  .design-block{margin-top:12px;padding:21px;border-radius:18px}
+  .design-heading{gap:12px}
+  .design-heading h3{font-size:20px;margin:3px 0}
+  .design-heading p{font-size:12px;line-height:1.5}
+  .design-options{grid-template-columns:1fr;gap:10px;margin-top:18px}
+  .design-option{grid-template-columns:1fr auto;padding:17px;gap:12px}
+  .design-option p{font-size:11px}
+  .design-price strong{font-size:23px}
+  .design-option .btn{min-height:44px}
+
+  .site-preview{margin-top:17px;border-radius:13px}
+  .preview-body{min-height:135px;padding:17px}
+  .preview-body strong{font-size:19px;max-width:230px}
+  .advanced-preview{min-height:175px}
+  .advanced-nav{gap:6px;padding:8px 10px;overflow:hidden;white-space:nowrap}
+  .advanced-nav span{display:none}
+  .advanced-hero{grid-template-columns:1fr;gap:10px;padding:15px}
+  .advanced-hero strong{font-size:17px}
+  .advanced-cards{grid-template-columns:repeat(3,1fr);gap:5px}
+  .advanced-cards span{padding:7px 5px;text-align:center;font-size:6px}
+
+  .feedback-card{min-height:0;gap:22px}
+  .quote{font-size:16px;line-height:1.45}
+  .result{font-size:10px}
+  .audience-card{min-height:0;padding:20px}
+  .audience-card h3{margin:14px 0 7px}
+
+  .cta{padding:32px 22px;border-radius:20px;display:flex;flex-direction:column;align-items:stretch;gap:22px}
+  .cta h2{font-size:clamp(28px,8vw,38px);line-height:1.05;letter-spacing:-1.5px}
+  .cta p{font-size:13px;line-height:1.5}
+  .cta .btn{width:100%;min-height:48px}
+  footer{padding:34px 0 90px}
+  footer p{font-size:13px}
+  .float{right:14px;bottom:14px;padding:12px 16px;font-size:11px}
+}
+
+@media (max-width: 380px){
+  .container{width:calc(100% - 24px)}
+  .hero h1{font-size:37px;letter-spacing:-2.4px}
+  .hero p{font-size:14px}
+  .trust{font-size:10px}
+  .hero-proof{transform:scale(.74);margin-bottom:-18px}
+  .extra-bottom strong{font-size:27px}
+  .cta{padding:28px 18px}
+}
+
+@media (min-width: 901px){
+  .mobile-only{display:none}
+}
