@@ -8,9 +8,19 @@ body{background:radial-gradient(900px 500px at 50% -180px,rgba(255,31,61,.13),tr
 .hero h1 span{display:inline;font-size:1em;color:#fff;letter-spacing:inherit;margin-top:0}
 
 /* WhatsApp icons */
-.wa-icon{display:inline-flex!important;align-items:center;justify-content:center;width:18px;height:18px;flex:0 0 18px;line-height:0;color:inherit}
-.wa-icon svg{display:block!important;width:18px!important;height:18px!important;flex:0 0 18px;color:inherit}
+.wa-icon{display:inline-flex!important;align-items:center;justify-content:center;width:18px;height:18px;flex:0 0 18px;line-height:0;color:inherit;overflow:visible;vertical-align:middle}
+.wa-icon svg{display:block!important;width:18px!important;height:18px!important;min-width:18px;min-height:18px;flex:0 0 18px;color:inherit;overflow:visible;vertical-align:middle}
 .whatsapp-nav .wa-icon{color:#06130b}
+
+/* Floating WhatsApp button — keep the icon fully visible */
+.float{display:inline-flex;align-items:center;justify-content:center;gap:8px;overflow:visible;line-height:1;white-space:nowrap}
+.float .wa-icon{width:20px;height:20px;flex:0 0 20px;overflow:visible}
+.float .wa-icon svg,.float>svg{display:block;width:20px!important;height:20px!important;min-width:20px;min-height:20px;flex:0 0 20px;overflow:visible}
+
+/* WhatsApp action buttons */
+.btn.wa{display:inline-flex;align-items:center;justify-content:center;gap:8px;overflow:visible;line-height:1.2}
+.btn.wa .wa-icon{width:18px;height:18px;flex:0 0 18px;overflow:visible}
+.btn.wa .wa-icon svg{width:18px!important;height:18px!important;min-width:18px;min-height:18px;overflow:visible}
 
 .site-preview{display:none}.extra-card{min-height:0;padding:30px}.extra-content h3{margin-top:20px}
 .design-block{margin-top:22px;padding:30px;border:1px solid rgba(255,255,255,.09);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));box-shadow:0 20px 55px rgba(0,0,0,.22)}
@@ -19,6 +29,5 @@ body{background:radial-gradient(900px 500px at 50% -180px,rgba(255,31,61,.13),tr
 .design-option:hover{transform:translateY(-3px);border-color:rgba(255,31,61,.42);box-shadow:0 15px 35px rgba(0,0,0,.24)}
 .design-price strong{color:#fff}.design-option .btn{background:#ff1f3d}
 .footer-contact{display:flex;flex-wrap:wrap;gap:10px 24px;margin:20px 0 14px}.footer-contact a{color:#dfe2e8;text-decoration:none;font-size:13px}.footer-contact a:hover{color:#fff}.footer-contact .contact-item{display:inline-flex;align-items:center;gap:8px}.footer-contact svg{width:17px;height:17px;flex:none}.footer-contact .whatsapp-link svg{color:#25d366}.footer-contact .email-link svg{color:#ff304d}
-.float{display:inline-flex;align-items:center;gap:8px}.float svg{width:18px;height:18px}
-@media(max-width:900px){.hero{padding-top:108px}.hero-proof{display:none}.hero h1{font-size:clamp(42px,8vw,62px);letter-spacing:-3px}.hero h1 span{display:inline;font-size:1em;letter-spacing:inherit;color:#fff}.extra-card{padding:22px}.design-block{padding:20px;border-radius:20px}.design-option{grid-template-columns:1fr;padding:18px}.design-price{text-align:left}.design-option .btn{grid-column:auto}.footer-contact{flex-direction:column;gap:12px}}
-@media(max-width:420px){.hero h1{font-size:clamp(35px,10vw,45px);letter-spacing:-2.2px;line-height:1.02}}
+@media(max-width:900px){.hero{padding-top:108px}.hero-proof{display:none}.hero h1{font-size:clamp(42px,8vw,62px);letter-spacing:-3px}.hero h1 span{display:inline;font-size:1em;letter-spacing:inherit;color:#fff}.extra-card{padding:22px}.design-block{padding:20px;border-radius:20px}.design-option{grid-template-columns:1fr;padding:18px}.design-price{text-align:left}.design-option .btn{grid-column:auto}.footer-contact{flex-direction:column;gap:12px}.float{right:14px;bottom:14px;padding:12px 16px}.float .wa-icon{width:19px;height:19px;flex-basis:19px}.float .wa-icon svg,.float>svg{width:19px!important;height:19px!important;min-width:19px;min-height:19px}}
+@media(max-width:420px){.hero h1{font-size:clamp(35px,10vw,45px);letter-spacing:-2.2px;line-height:1.02}.float{right:12px;bottom:12px;padding:12px 15px}.float .wa-icon{width:18px;height:18px;flex-basis:18px}.float .wa-icon svg,.float>svg{width:18px!important;height:18px!important;min-width:18px;min-height:18px}}
