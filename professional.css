@@ -1,0 +1,78 @@
+/* TDZ Marketing — professional visual refinement */
+:root{
+  --red:#ff1f3d;
+  --red2:#ff304d;
+  --red-soft:rgba(255,31,61,.12);
+}
+body{
+  background:
+    radial-gradient(900px 500px at 50% -180px,rgba(255,31,61,.13),transparent 65%),
+    linear-gradient(180deg,#06070a 0%,#08090d 45%,#06070a 100%);
+}
+.brand-mark,.btn:not(.ghost):not(.whatsapp-nav):not(.white){
+  background:linear-gradient(135deg,#ff1738,#ff304d);
+}
+.eyebrow,.design-option>div:first-child span,.audience-number{color:#ff304d}
+.plan.recommended{border-color:#ff1f3d}
+.badge{background:#ff1f3d}
+.cta{background:linear-gradient(120deg,#ed1032,#ff304d)}
+.hero:before{background:radial-gradient(circle,rgba(255,31,61,.11),transparent 68%)}
+
+/* Cleaner extras: no fake website screenshots */
+.site-preview{display:none}
+.extra-card{min-height:0;padding:30px}
+.extra-content h3{margin-top:20px}
+
+/* Arts: clean premium cards, without decorative mock images */
+.design-block{
+  margin-top:22px;
+  padding:30px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+  box-shadow:0 20px 55px rgba(0,0,0,.22);
+}
+.design-heading .extra-icon{
+  background:rgba(255,31,61,.09);
+  border-color:rgba(255,31,61,.22);
+  color:#ff304d;
+}
+.design-option{
+  background:linear-gradient(145deg,#151821,#0c0e13);
+  border-color:rgba(255,255,255,.09);
+  transition:.22s ease;
+}
+.design-option:hover{transform:translateY(-3px);border-color:rgba(255,31,61,.42);box-shadow:0 15px 35px rgba(0,0,0,.24)}
+.design-price strong{color:#fff}
+.design-option .btn{background:#ff1f3d}
+
+/* Professional footer/contact */
+.footer-contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 24px;
+  margin:20px 0 14px;
+}
+.footer-contact a{
+  color:#dfe2e8;
+  text-decoration:none;
+  font-size:13px;
+}
+.footer-contact a:hover{color:#fff}
+.footer-contact .contact-item{display:inline-flex;align-items:center;gap:8px}
+.footer-contact svg{width:17px;height:17px;flex:none}
+.footer-contact .whatsapp-link svg{color:#25d366}
+.footer-contact .email-link svg{color:#ff304d}
+.float{display:inline-flex;align-items:center;gap:8px}
+.float svg{width:18px;height:18px}
+
+@media(max-width:900px){
+  .hero{padding-top:108px}
+  .hero-proof{display:none}
+  .extra-card{padding:22px}
+  .design-block{padding:20px;border-radius:20px}
+  .design-option{grid-template-columns:1fr;padding:18px}
+  .design-price{text-align:left}
+  .design-option .btn{grid-column:auto}
+  .footer-contact{flex-direction:column;gap:12px}
+}
