@@ -18,6 +18,15 @@ body{
 .cta{background:linear-gradient(120deg,#ed1032,#ff304d)}
 .hero:before{background:radial-gradient(circle,rgba(255,31,61,.11),transparent 68%)}
 
+/* Hero: natural headline flow, clean and professional */
+.hero h1 span{
+  display:inline;
+  font-size:1em;
+  color:#fff;
+  letter-spacing:inherit;
+  margin-top:0;
+}
+
 /* Cleaner extras: no fake website screenshots */
 .site-preview{display:none}
 .extra-card{min-height:0;padding:30px}
@@ -69,10 +78,15 @@ body{
 @media(max-width:900px){
   .hero{padding-top:108px}
   .hero-proof{display:none}
+  .hero h1{font-size:clamp(42px,8vw,62px);letter-spacing:-3px}
+  .hero h1 span{display:inline;font-size:1em;letter-spacing:inherit;color:#fff}
   .extra-card{padding:22px}
   .design-block{padding:20px;border-radius:20px}
   .design-option{grid-template-columns:1fr;padding:18px}
   .design-price{text-align:left}
   .design-option .btn{grid-column:auto}
   .footer-contact{flex-direction:column;gap:12px}
+}
+@media(max-width:420px){
+  .hero h1{font-size:clamp(35px,10vw,45px);letter-spacing:-2.2px;line-height:1.02}
 }
